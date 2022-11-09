@@ -1,0 +1,59 @@
+{
+  "name": "@aaronpowell/react-static-web-apps-auth",
+  "version": "1.4.0",
+  "description": "A library to help creating authenticated React apps on Azure Static Web Apps",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [
+    "react",
+    "azure",
+    "cloud",
+    "serverless",
+    "hosting",
+    "static",
+    "authentication",
+    "staticwebapp"
+  ],
+  "author": {
+    "name": "Aaron Powell",
+    "email": "me+github@aaron-powell.com",
+    "url": "https://www.aaron-powell.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^8.0.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && npm run lint"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronpowell/react-static-web-apps-auth"
+  },
+  "bugs": {
+    "url": "https://github.com/aaronpowell/react-static-web-apps-auth/issues"
+  },
+  "homepage": "https://github.com/aaronpowell/react-static-web-apps-auth",
+  "private": false
+}
